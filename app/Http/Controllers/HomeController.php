@@ -71,12 +71,17 @@ class HomeController extends WowSiteController
     public function createAccount(Request $request)
     {
         $this->validate($request, [
-            'username' => 'required|email|max:25|unique:realmd.account',
+            'email' => 'required|email|unique:realmd.account',
+            'username' => 'required|max:25|unique:realmd.account',
             'password' => 'required|min:5',
             'repassword' => 'required|same:password',
         ]);
 
-        $this->accounts->createAccount($request->username, $request->password);
+        $this->accounts->createAccount(
+            $request->email, 
+            $request->username, 
+            $request->password
+        );
 
         return redirect()
                 ->route('home.index')

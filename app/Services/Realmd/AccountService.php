@@ -58,15 +58,17 @@ class AccountService extends RealmdService
 	/**
 	 * Creates a new user account on realmd database
 	 * 
+	 * @param  string $email
 	 * @param  string $username 
 	 * @param  string $password 
 	 * 
 	 * @return Account           
 	 */
-	public function createAccount($username, $password)
+	public function createAccount($email, $username, $password)
 	{
 		$account = new Account;
 
+		$account->email = $email; 
 		$account->username = strtoupper($username);
 		$account->sha_pass_hash = $this->encodePassword($username, $password);
 		$account->gmlevel = 0; 

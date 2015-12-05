@@ -30,8 +30,12 @@
 			<form class="form-inline" method="post" action="{{ route('accounts.create') }}" autocomplete="off">
 				{{ csrf_field() }}
 				<div class="form-group">
+					<label class="sr-only" for="username">Username</label>
+					<input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+				</div>
+				<div class="form-group">
 					<label class="sr-only" for="email">Email address</label>
-					<input type="email" name="username" class="form-control" id="email" placeholder="Email" required>
+					<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
 				</div>
 				<div class="form-group">
 					<label class="sr-only" for="password">Password</label>
