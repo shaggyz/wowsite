@@ -4,7 +4,30 @@
     "gulp": "^3.8.8"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.0.0",
+    "browserify": "^12.0.0",
     "laravel-elixir": "^4.0.0",
-    "bootstrap-sass": "^3.0.0"
-  }
+    "minifyify": "^7.1.0",
+    "watchify": "^3.6.0"
+  },
+  "name": "nicowow.daliver.com",
+  "description": "Simple website used to create accounts in a 1.12.1 Mangos Classic server.",
+  "version": "1.0.0",
+  "main": "public/js/src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaggyz/wowsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shaggyz/wowsite/issues"
+  },
+  "homepage": "https://github.com/shaggyz/wowsite#readme"
 }

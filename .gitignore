@@ -2,4 +2,6 @@
 /node_modules
 Homestead.yaml
 Homestead.json
+readme.html
 .env
+/public/js/bundle.map.json

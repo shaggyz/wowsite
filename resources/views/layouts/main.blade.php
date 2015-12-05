@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<title>Nico's Wowserver - @yield('title')</title>
+	<title>{{ $wowServerName }} Wowserver - @yield('title')</title>
 
 	<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
 	@yield('head')
@@ -12,8 +12,8 @@
 <body>
 	<div class="container">
 		<header>
-			<h1>Nico's Wowserver</h1>
-			<h2 class="muted">Classic Vanilla World of warcraft server</h2>
+			<h1>{{ $wowServerName }} Wowserver</h1>
+			<h2 class="muted">Classic Vanilla {{ $wowServerVersion }} World of warcraft server</h2>
 			<p><strong>Untouched</strong> database, Blizzard rates, No item store, normal drops, etc.</p>
 		</header>
 
@@ -23,9 +23,10 @@
 
 		<footer>
 			<hr>
-			<p>Nico's wow server - {{ date('Y') }}</p>
+			<p>{{ $wowServerName }} wow server - {{ date('Y') }}</p>
 			<script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
 			<script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="/js/bundle.js"></script>
 			@yield('foot')
 		</footer>
 	</div>

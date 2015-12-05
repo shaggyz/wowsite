@@ -9,4 +9,6 @@ class Account extends Model
     protected $table = 'account';
 
     protected $connection = 'realmd';
+
+    public $timestamps = false;
 }

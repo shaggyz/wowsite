@@ -9,4 +9,6 @@ class GameCharacter extends Model
     protected $connection = 'characters';
 
     protected $table = 'characters';
+
+    public $timestamps = false;
 }

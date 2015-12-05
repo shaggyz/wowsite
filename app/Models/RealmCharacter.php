@@ -9,4 +9,6 @@ class RealmCharacter extends Model
     protected $table = 'realmcharacters';
 
     protected $connection = 'realmd';
+
+    public $timestamps = false;
 }
