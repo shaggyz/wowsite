@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: WowSite
+        psr4_prefix: WowSite
+        src_path: app
