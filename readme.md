@@ -34,5 +34,10 @@ scripts/watch.sh
 ### TODO
 
 - ~~Character creation~~
+- User login with realmd database on site
+- Change password
+- Character list
+- superadmin backend?
+- mail notifications?
 - Some fancy design? 
 
