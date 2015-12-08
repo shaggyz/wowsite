@@ -3,10 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<title>{{ $wowServerName }} Wowserver - @yield('title')</title>
-
 	<link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="icon" type="image/png" href="{{ asset('img/favicon-' . rand(1,9) . '.png') }}">
 	@yield('head')
 </head>
 <body>
