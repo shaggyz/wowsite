@@ -91,13 +91,10 @@ CREATE TABLE `characters`.`characters` (
   KEY `idx_name` (`name`)
 ) ENGINE=InnoDB;
 
-CREATE TABLE `realmcharacters` (
+CREATE TABLE `realmd`.`realmcharacters` (
   `realmid` int(11) unsigned NOT NULL DEFAULT '0',
   `acctid` bigint(20) unsigned NOT NULL,
   `numchars` tinyint(3) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`realmid`,`acctid`),
   KEY `acctid` (`acctid`)
 ) ENGINE=MyISAM;
-
-
-
