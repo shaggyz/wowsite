@@ -10,7 +10,7 @@
     "minifyify": "^7.1.0",
     "watchify": "^3.6.0"
   },
-  "name": "nicowow.daliver.com",
+  "name": "wowsite",
   "description": "Simple website used to create accounts in a 1.12.1 Mangos Classic server.",
   "version": "1.0.0",
   "main": "public/js/src/main.js",
