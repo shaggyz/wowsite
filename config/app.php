@@ -145,6 +145,11 @@ return [
         WowSite\Providers\EventServiceProvider::class,
         WowSite\Providers\RouteServiceProvider::class,
 
+        /*
+         * Package service providers
+         */
+        Xinax\LaravelGettext\LaravelGettextServiceProvider::class,
+
     ],
 
     /*

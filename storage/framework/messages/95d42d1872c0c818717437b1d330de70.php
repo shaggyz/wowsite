@@ -10,7 +10,6 @@ use WowSite\Services\Realmd\CharacterService;
 
 //use Krumo;
 use View;
-use URL;
 use LaravelGettext;
 
 /**
@@ -97,7 +96,7 @@ class HomeController extends WowSiteController
     public function changeLang($locale=null)
     {
         LaravelGettext::setLocale($locale);
-        return redirect()->to(URL::previous());
+        return Redirect::to(URL::previous());
     }
 }
     

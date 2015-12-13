@@ -18,6 +18,7 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \WowSite\Http\Middleware\VerifyCsrfToken::class,
+        \Xinax\LaravelGettext\Middleware\GettextMiddleware::class,
     ];
 
     /**
