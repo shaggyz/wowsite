@@ -7,7 +7,7 @@ Simple website used to create accounts in a 1.12.1 Mangos Classic server.
 - php 5.6+, composer http://www.getcomposer.org
 - Bower http://bower.io/
 - Node and npm https://nodejs.org/en/
-- Browserify ```npm install -g browserify``` and extras:
+- Browserify ```sudo npm install -g browserify``` and extras:
 	- ```sudo npm install -g watchify```
 	- ```sudo npm install -g minifyify```
 
