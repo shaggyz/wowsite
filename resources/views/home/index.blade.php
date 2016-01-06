@@ -7,49 +7,100 @@
 	<div class="row">
 		<div class="col-sm-9">
 			<div class="create-account">
-				<h3>{{ _('Create new account') }}</h3>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#newAccount" aria-controls="newAccount" role="tab" data-toggle="tab">New Account</a>
+					</li>
+					<li role="presentation">
+						<a href="#listAccounts" aria-controls="listAccounts" role="tab" data-toggle="tab">List accounts</a>
+					</li>
+				</ul>
 
-				{{-- Action messages: the good news :D --}}
-				@if (session()->has('message'))
-					<div class="alert alert-success">
-				        <p>{{ session()->get('message') }}</p>
-				    </div>
-				@endif
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active well" id="newAccount">
+						<div class="row">
+							<div class="col-sm-3 hidden-xs">
+								<img src="{{ asset('/img/gnome.png') }}" alt="Create it!">
+							</div>
+							<div class="col-sm-9">
+								<h3>Create new account</h3>
 
-				{{-- Validation error list --}}
-				@if (count($errors) > 0)
-				    <div class="alert alert-danger">
-				        <ul>
-				            @foreach ($errors->all() as $error)
-				                <li>{{ $error }}</li>
-				            @endforeach
-				        </ul>
-				    </div>
-				@endif
+								{{-- Action messages: the good news :D --}}
+								@if (session()->has('message'))
+									<div class="alert alert-success">
+								        <p>{{ session()->get('message') }}</p>
+								    </div>
+								@endif
 
-				{{-- If account was created the form isn't needed --}}
-				@if (! session()->has('message'))
-					<form class="form-inline" method="post" action="{{ route('accounts.create') }}" autocomplete="off">
-						{{ csrf_field() }}
-						<div class="form-group">
-							<label class="sr-only" for="username">{{ _('Username') }}</label>
-							<input type="text" name="username" class="form-control" id="username" placeholder="{{ _('Username') }}" required>
+								{{-- Validation error list --}}
+								@if (count($errors) > 0)
+								    <div class="alert alert-danger">
+								        <ul>
+								            @foreach ($errors->all() as $error)
+								                <li>{{ $error }}</li>
+								            @endforeach
+								        </ul>
+								    </div>
+								@endif
+
+								{{-- If account was created the form isn't needed --}}
+								@if (! session()->has('message'))
+									<form class="form-inline" method="post" action="{{ route('accounts.create') }}" autocomplete="off">
+										{{ csrf_field() }}
+										<div class="form-line">
+											<div class="form-group">
+												<label class="sr-only" for="username">Username</label>
+												<input type="text" name="username" class="form-control" id="username" placeholder="Username" required>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="email">Email address</label>
+												<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
+											</div>
+										</div>
+										<div class="form-line">
+											<div class="form-group">
+												<label class="sr-only" for="password">Password</label>
+												<input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<label class="sr-only" for="repassword">Repeat Password</label>
+												<input type="password" name="repassword" class="form-control" id="repassword" placeholder="Repeat Password" required>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-primary">Create account</button>
+									</form>
+								@endif
+							</div>
 						</div>
-						<div class="form-group">
-							<label class="sr-only" for="email">{{ _('Email address') }}</label>
-							<input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="password">{{ _('Password') }}</label>
-							<input type="password" name="password" class="form-control" id="password" placeholder="{{ _('Password') }}" required>
-						</div>
-						<div class="form-group">
-							<label class="sr-only" for="repassword">{{ _('Repeat Password') }}</label>
-							<input type="password" name="repassword" class="form-control" id="repassword" placeholder="{{ _('Repeat Password') }}" required>
-						</div>
-						<button type="submit" class="btn btn-primary">{{ _('Create account') }}</button>
-					</form>
-				@endif
+					</div>
+					<div role="tabpanel" class="tab-pane" id="listAccounts">
+						<h3>List accounts</h3>
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Username</th>
+									<th>Locked</th>
+									<th>Realm ID</th>
+									<th class="text-right">Last login</th>
+								</tr>
+							</thead>
+							<tbody>
+							@foreach($accounts as $account)
+								<tr>
+									<td>{{ $account->id }}</td>
+									<td>{{ $account->username }}</td>
+									<td>{{ $account->locked }}</td>
+									<td>#{{ $account->id }}</td>
+									<td class="text-right">{{ $account->last_login }}</td>
+								</tr>
+							@endforeach
+							</tbody>
+						</table>
+					</div>
+				</div>
 
 				<hr>
 
@@ -103,12 +154,12 @@
 			<div class="server-statistics">
 				<h3>{{ _('Server statistics') }}</h3>
 				<dl>
-					<dt>{{ _('Characters') }}</dt>
-						<dd>{{ _('Total characters on server') }} <strong>{{ $characters }}</strong></dd>
-					<dt>{{ _('Players online') }}</dt>
-						<dd>{{ _('Total players online') }} <strong>{{ $online }}</strong></dd>
-					<dt>{{ _('Created accounts') }}</dt>
-						<dd>{{ _('Total accounts on server') }} <strong>{{ $accounts }}</strong></dd>
+					<dt>Characters</dt>
+						<dd>Total characters on server <strong>{{ $characters }}</strong></dd>
+					<dt>Players online</dt>
+						<dd>Total players online <strong>{{ $online }}</strong></dd>
+					<dt>Created accounts</dt>
+						<dd>Total accounts on server <strong>{{ count($accounts) }}</strong></dd>
 				</dl>
 			</div>
 

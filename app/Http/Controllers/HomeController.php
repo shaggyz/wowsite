@@ -21,26 +21,26 @@ class HomeController extends WowSiteController
 {
     /**
      * Accounts service
-     * 
+     *
      * @var AccountService
      */
     protected $accounts;
 
     /**
      * Game characters service
-     * 
+     *
      * @var CharacterService
      */
     protected $characters;
 
     /**
      * Some service injections
-     * 
-     * @param AccountService   $accounts   
-     * @param CharacterService $characters 
+     *
+     * @param AccountService   $accounts
+     * @param CharacterService $characters
      */
     public function __construct(
-        AccountService $accounts, 
+        AccountService $accounts,
         CharacterService $characters)
     {
         $this->accounts = $accounts;
@@ -60,14 +60,14 @@ class HomeController extends WowSiteController
         return View::make('home.index')
                         ->withCharacters($this->characters->total())
                         ->withOnline($this->characters->online())
-                        ->withAccounts($this->accounts->total());
+                        ->withAccounts($this->accounts->all());
     }
 
     /**
      * Creates a new user account
      * POST /accounts/create
-     * 
-     * @param  Request $request 
+     *
+     * @param  Request $request
      * @return \Illuminate\Http\Response
      */
     public function createAccount(Request $request)
@@ -80,8 +80,8 @@ class HomeController extends WowSiteController
         ]);
 
         $this->accounts->createAccount(
-            $request->email, 
-            $request->username, 
+            $request->email,
+            $request->username,
             $request->password
         );
 
@@ -100,4 +100,3 @@ class HomeController extends WowSiteController
         return redirect()->to(URL::previous());
     }
 }
-    
