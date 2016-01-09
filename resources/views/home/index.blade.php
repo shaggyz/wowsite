@@ -93,8 +93,12 @@
 									<td>{{ $account->id }}</td>
 									<td>{{ $account->username }}</td>
 									<td>{{ $account->locked }}</td>
-									<td>#{{ $account->id }}</td>
-									<td class="text-right">{{ $account->last_login }}</td>
+									<td>#{{ $account->active_realm_id }}</td>
+                                    @if ($account->last_login->timestamp > 0)
+									    <td class="text-right">{{ $account->last_login->format('d/m/Y') }}</td>
+                                    @else
+                                        <td class="text-right">{{ _('Never logged in') }}</td>
+                                    @endif
 								</tr>
 							@endforeach
 							</tbody>

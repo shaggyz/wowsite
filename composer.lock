@@ -1782,12 +1782,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinax/laravel-gettext.git",
-                "reference": "e80d3fa2b5ffe973ee5d9abb47cc0a239a6b5654"
+                "reference": "2ac0d6ef96bc22a2a52357a10109aa171808707e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinax/laravel-gettext/zipball/e80d3fa2b5ffe973ee5d9abb47cc0a239a6b5654",
-                "reference": "e80d3fa2b5ffe973ee5d9abb47cc0a239a6b5654",
+                "url": "https://api.github.com/repos/xinax/laravel-gettext/zipball/2ac0d6ef96bc22a2a52357a10109aa171808707e",
+                "reference": "2ac0d6ef96bc22a2a52357a10109aa171808707e",
                 "shasum": ""
             },
             "require": {
@@ -1825,7 +1825,7 @@
                 "poEdit",
                 "translation"
             ],
-            "time": "2016-01-06 19:59:22"
+            "time": "2016-01-06 20:03:48"
         }
     ],
     "packages-dev": [
