@@ -159,7 +159,7 @@
 				<h3>{{ _('Server statistics') }}</h3>
 				<dl>
 					<dt>{{ _('Characters') }}</dt>
-						<dd>{{ _('Total characters on server') }} <strong>{{ $characters }}</strong></dd>
+						<dd>{{ _('Total characters on server') }} <strong>{{ !is_null($characters) ? $characters : 0 }}</strong></dd>
 					<dt>{{ _('Players online') }}</dt>
 						<dd>{{ _('Total players online') }} <strong>{{ $online }}</strong></dd>
 					<dt>{{ _('Created accounts') }}</dt>
