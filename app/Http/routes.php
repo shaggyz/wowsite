@@ -15,21 +15,6 @@
     return view('welcome');
 });*/
 
-Route::get('/', [
-    'as' => 'home.index',
-    'uses' => 'HomeController@index'
-]);
-
-Route::post('/accounts/create', [
-    'as' => 'accounts.create',
-    'uses' => 'HomeController@createAccount'
-]);
-
-Route::get('/lang/{locale?}', [
-    'as'=>'lang',
-    'uses'=>'HomeController@changeLang'
-]);
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -42,5 +27,20 @@ Route::get('/lang/{locale?}', [
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+
+    Route::get('/', [
+        'as' => 'home.index',
+        'uses' => 'HomeController@index'
+    ]);
+
+    Route::post('/accounts/create', [
+        'as' => 'accounts.create',
+        'uses' => 'HomeController@createAccount'
+    ]);
+
+    Route::get('/lang/{locale?}', [
+        'as'=>'lang',
+        'uses'=>'HomeController@changeLang'
+    ]);
+
 });

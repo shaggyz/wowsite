@@ -1,27 +1,43 @@
-## Laravel PHP Framework
+## Wow website
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Simple website used to create accounts in a 1.12.1 Mangos Classic server.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### Requirements:
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+- php 5.6+, composer http://www.getcomposer.org
+- Bower http://bower.io/
+- Node and npm https://nodejs.org/en/
+- Browserify ```sudo npm install -g browserify``` and extras:
+    - ```sudo npm install -g watchify```
+    - ```sudo npm install -g minifyify```
 
-## Official Documentation
+### Development deploy:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+- If you **don't** have a wow server, run ```database/sql/create.sql```
+- Copy and configure ```.env.example``` to ```.env```
+- Deploy with apache/nginx like a normal laravel site.
+- cd wowsite && composer install
+- cd public && bower update
 
-## Contributing
+For automatic assets building:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```bash 
+cd project-root
 
-## Security Vulnerabilities
+# if fresh install:
+chmod +x scripts/watch.sh 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+# In a dedicated terminal as possible
+scripts/watch.sh
+```
 
-### License
+### TODO
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+- ~~Character creation~~
+- User login with realmd database on site
+- Change password
+- Character list
+- superadmin backend?
+- mail notifications?
+- Some fancy design? 
+
