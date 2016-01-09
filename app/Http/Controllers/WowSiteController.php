@@ -25,4 +25,3 @@ class WowSiteController extends Controller
         ]);
     }
 }
-    

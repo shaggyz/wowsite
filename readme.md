@@ -8,8 +8,8 @@ Simple website used to create accounts in a 1.12.1 Mangos Classic server.
 - Bower http://bower.io/
 - Node and npm https://nodejs.org/en/
 - Browserify ```sudo npm install -g browserify``` and extras:
-	- ```sudo npm install -g watchify```
-	- ```sudo npm install -g minifyify```
+    - ```sudo npm install -g watchify```
+    - ```sudo npm install -g minifyify```
 
 ### Development deploy:
 
