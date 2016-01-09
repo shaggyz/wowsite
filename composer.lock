@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c5891f778e353bca7e6732fee6402d3",
-    "content-hash": "6fc573e4512d72aa07aaf52dc8fab2c9",
+    "hash": "b08676d073c88edf1734304493a7e1e0",
+    "content-hash": "00aeb79c42d60b647732a46c482a18f8",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -308,16 +308,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.6",
+            "version": "v5.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "b774c304ee81fcf5402fa06b261b364ba8f29cf0"
+                "reference": "26cd65eaa4bcc0fb0be381cfb7cfdcda06a3c2b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/b774c304ee81fcf5402fa06b261b364ba8f29cf0",
-                "reference": "b774c304ee81fcf5402fa06b261b364ba8f29cf0",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/26cd65eaa4bcc0fb0be381cfb7cfdcda06a3c2b4",
+                "reference": "26cd65eaa4bcc0fb0be381cfb7cfdcda06a3c2b4",
                 "shasum": ""
             },
             "require": {
@@ -432,7 +432,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-12-31 17:41:58"
+            "time": "2016-01-07 13:54:34"
         },
         {
             "name": "league/flysystem",
@@ -739,16 +739,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47"
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/d762ee5b099a29044603cd4649851e81aa66cb47",
-                "reference": "d762ee5b099a29044603cd4649851e81aa66cb47",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
+                "reference": "dd8998b7c846f6909f4e7a5f67fabebfc412a4f7",
                 "shasum": ""
             },
             "require": {
@@ -783,7 +783,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-12-10 14:48:13"
+            "time": "2016-01-06 13:31:20"
         },
         {
             "name": "psr/log",
@@ -1778,16 +1778,16 @@
         },
         {
             "name": "xinax/laravel-gettext",
-            "version": "dev-master",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xinax/laravel-gettext.git",
-                "reference": "2ac0d6ef96bc22a2a52357a10109aa171808707e"
+                "reference": "bf9550c19b488471add7986263ace8ac55a54c3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xinax/laravel-gettext/zipball/2ac0d6ef96bc22a2a52357a10109aa171808707e",
-                "reference": "2ac0d6ef96bc22a2a52357a10109aa171808707e",
+                "url": "https://api.github.com/repos/xinax/laravel-gettext/zipball/bf9550c19b488471add7986263ace8ac55a54c3a",
+                "reference": "bf9550c19b488471add7986263ace8ac55a54c3a",
                 "shasum": ""
             },
             "require": {
@@ -1825,7 +1825,7 @@
                 "poEdit",
                 "translation"
             ],
-            "time": "2016-01-06 20:03:48"
+            "time": "2016-01-09 11:56:38"
         }
     ],
     "packages-dev": [
@@ -3219,9 +3219,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "xinax/laravel-gettext": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
