@@ -1,0 +1,186 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MultilanguageLaravelApplication\n"
+"POT-Creation-Date: 2016-01-09 17:41+0100\n"
+"PO-Revision-Date: 2016-01-09 17:44+0100\n"
+"Last-Translator: James Translator <james@translations.colm>\n"
+"Language-Team: James Translator <james@translations.colm>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-Basepath: ../../../../../app\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Http/Controllers\n"
+"X-Poedit-SearchPath-1: ../resources/views\n"
+"X-Poedit-SearchPath-2: Console/Commands\n"
+"X-Poedit-SearchPath-3: ../storage/framework/messages/\n"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:22
+msgid "Classic Vanilla"
+msgstr "Servidor clásico"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:22
+msgid "World of warcraft server"
+msgstr "de World of warcraft"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:23
+msgid "Untouched"
+msgstr "Base de datos sin tocar"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:23
+msgid "database, Blizzard rates, No item store, normal drops, etc."
+msgstr "rates Blizzard, sin tienda de ítems, drops normales, etc."
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:30
+msgid "English"
+msgstr "Inglés"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:31
+msgid "Spanish"
+msgstr "Español"
+
+#: ../storage/framework/messages//ba78aaa992a585e02bf5313f22e738a5862efcd3.php.php:46
+msgid "wow server"
+msgstr "wow server"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:11
+msgid "New Account"
+msgstr "Nueva cuenta"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:14
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:78
+msgid "List accounts"
+msgstr "Lista de cuentas"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:26
+msgid "Create new account"
+msgstr "Crear cuenta"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:53
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:54
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:83
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:57
+msgid "Email address"
+msgstr "Dirección de email"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:58
+msgid "Email"
+msgstr "Email"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:63
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:64
+msgid "Password"
+msgstr "Contraseña"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:67
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:68
+msgid "Repeat Password"
+msgstr "Repetir contraseña"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:71
+msgid "Create account"
+msgstr "Crear cuenta"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:84
+msgid "Locked"
+msgstr "Bloqueado"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:85
+msgid "Realm ID"
+msgstr "Reino #"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:86
+msgid "Last login"
+msgstr "Último login"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:99
+msgid "Never logged in"
+msgstr "Nunca"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:111
+msgid "Help"
+msgstr "Ayuda"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:113
+msgid "Howto play?"
+msgstr "¿Cómo jugar?"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:116
+msgid "Create a new account"
+msgstr "Crear cuenta"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:119
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:170
+msgid "Download game client"
+msgstr "Descargar el cliente del juego"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:122
+msgid "Uncompress game client in folder named"
+msgstr "Descromprimir el cliente en una carpeta llamada"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:125
+msgid "Run the game always with wow.exe (never with launcher.exe)"
+msgstr "Ejecutar el juego siempre con wow.exe (no usar nunca launcher.exe)"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:128
+msgid "At logon screen enter your credentials. Enjoy :D"
+msgstr "En el apartado de login usar los datos del usuario creado. A viciar! :D"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:132
+msgid "Classic wow tools"
+msgstr "Herramientas para el wow clásico"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:136
+msgid "Talent calculator"
+msgstr "Calculadora de talentos"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:140
+msgid "World database"
+msgstr "Base de datos del mundo"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:144
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:148
+msgid "Addons"
+msgstr "Addons"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:158
+msgid "Server statistics"
+msgstr "Estadísticas del servidor"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:160
+msgid "Characters"
+msgstr "Personajes"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:161
+msgid "Total characters on server"
+msgstr "Total de personajes en el servidor"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:162
+msgid "Players online"
+msgstr "Jugadores online"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:163
+msgid "Total players online"
+msgstr "Total de jugadores online"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:164
+msgid "Created accounts"
+msgstr "Cuentas creadas"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:165
+msgid "Total accounts on server"
+msgstr "Total de cuentas en el servidor"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:173
+msgid "Extra downloads"
+msgstr "Descargas extra"
+
+#: ../storage/framework/messages//e2e34780d3ffeee99e8e7a58ae944f5ddda84d1c.php.php:174
+msgid "Server VirtualBox image"
+msgstr "Imagen del servidor para VirtualBox"

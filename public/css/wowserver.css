@@ -1,0 +1,114 @@
+/*
+Project: Classic Vanilla 1.12.1 World of warcraft server
+Theme URI: http://www.wowsite.com
+Authors: Shaggyz & rafel.sanso
+Description: Web application for create new users for the WoW Server.
+Version: 1.0
+*/
+
+/**
+ * Table of Contents:
+ *
+ * 1.0 - General
+ * 2.0 - Header
+ * 3.0 - Content
+ *   3.1 - Sidebar
+ *   3.2 - Tabs
+ *   3.3 -
+ * 4.0 - Footer
+ * 5.0 - Styling
+ * 6.0 - Responsive
+ * -----------------------------------------------------------------------------
+ */
+
+/* 1.0 - General */
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url('../../img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #000;
+}
+h1 {
+    font-size: 20px;
+    margin: 0 0 5px;
+    font-weight: 700;
+}
+h2 {
+	margin-top: 0;
+	font-size: 22px;
+	margin: 0 0 5px;
+}
+a, a:hover, a:active, a:focus, object, embed {
+   outline: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+
+/* 2.0 - Header */
+header { margin: 25px 0; }
+.server-resume {
+	background-color: rgba(255, 255, 255, 0.65);
+	color: #000;
+	padding-top: 10px;
+	border-radius: 15px;
+	padding-right: 15px;
+}
+
+/* 3.0 - Content */
+#content .container {
+	background-color: #fff;
+	padding-bottom: 50px;
+}
+#newAccount { margin-top: 15px; }
+
+/* 3.2 - Tabs */
+
+.nav-tabs {
+	margin-top: 15px;
+	border-bottom: none;
+}
+.nav-tabs a {
+	border: 1px solid #ccc !important;
+	border-radius: 5px !important;
+}
+.nav-tabs a:hover, .nav-tabs .active a {
+	background-color: #333 !important;
+	color: #fff !important;
+}
+.form-line { margin-bottom: 10px; }
+.well h3 { margin-top: 0; }
+
+/* 4.0 - Footer */
+footer {
+	color: #fff;
+	margin-top: 15px;
+}
+
+/* 6.0 - Responsive */
+@media (max-width: 768px) {
+	body { background: none; }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (min-width: 992px) {
+	.container {
+	    width: 960px;
+	}
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+/storage/framework/messages/*
+.env
+/public/js/bundle.map.json
+.DS_*
+.idea
+/public/vendor/*
