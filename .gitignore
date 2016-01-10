@@ -9,3 +9,4 @@ readme.html
 .DS_*
 .idea
 /public/vendor/*
+/public/downloads

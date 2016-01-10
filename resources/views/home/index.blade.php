@@ -169,7 +169,7 @@
 
 			<div class="client-download">
 				<h3>{{ _('Download game client') }}</h3>
-				<p><a href="/downloads/wow-1.12.1.zip">World of Warcraft 1.12.1 EN</a></p>
+				<p><a href="/downloads/wow-1.12.1.7z">World of Warcraft 1.12.1 EN</a></p>
 
 				<h4>{{ _('Extra downloads') }}</h4>
 				<p><a href="#">{{ _('Server VirtualBox image') }}</a></p>
