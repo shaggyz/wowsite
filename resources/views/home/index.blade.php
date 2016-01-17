@@ -169,7 +169,8 @@
 
 			<div class="client-download">
 				<h3>{{ _('Download game client') }}</h3>
-				<p><a href="/downloads/wow-1.12.1.7z">World of Warcraft 1.12.1 EN</a></p>
+				<p><a href="/downloads/wow-1.12.1.7z">World of Warcraft 1.12.1 EN (Windows)</a></p>
+				<p><a href="https://mega.nz/#!xYYmwJCJ!Wh4PPR7hDsV0ktqO4PNI906Szf0E9kDsZip0__GFdzY" target="_blank">World of Warcraft 1.12.1 EN (Mac)</a></p>
 
 				<h4>{{ _('Extra downloads') }}</h4>
 				<p><a href="#">{{ _('Server VirtualBox image') }}</a></p>
