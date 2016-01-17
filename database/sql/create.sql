@@ -98,6 +98,3 @@ CREATE TABLE `realmd`.`realmcharacters` (
   PRIMARY KEY (`realmid`,`acctid`),
   KEY `acctid` (`acctid`)
 ) ENGINE=MyISAM;
-
-
-

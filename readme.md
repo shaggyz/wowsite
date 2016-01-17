@@ -8,8 +8,8 @@ Simple website used to create accounts in a 1.12.1 Mangos Classic server.
 - Bower http://bower.io/
 - Node and npm https://nodejs.org/en/
 - Browserify ```sudo npm install -g browserify``` and extras:
-	- ```sudo npm install -g watchify```
-	- ```sudo npm install -g minifyify```
+    - ```sudo npm install -g watchify```
+    - ```sudo npm install -g minifyify```
 
 ### Development deploy:
 
@@ -18,6 +18,9 @@ Simple website used to create accounts in a 1.12.1 Mangos Classic server.
 - Deploy with apache/nginx like a normal laravel site.
 - cd wowsite && composer install
 - cd public && bower update
+- For localization: 
+    - ```sudo locale-gen es_ES.utf8```
+    - ```sudo locale-gen en_US.utf8```
 
 For automatic assets building:
 
@@ -36,7 +39,7 @@ scripts/watch.sh
 - ~~Character creation~~
 - User login with realmd database on site
 - Change password
-- Character list
+- ~~Character list~~
 - superadmin backend?
 - mail notifications?
 - Some fancy design? 

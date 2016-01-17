@@ -4,4 +4,9 @@ Homestead.yaml
 Homestead.json
 readme.html
 .env
+/storage/framework/messages/*
 /public/js/bundle.map.json
+.DS_*
+.idea
+/public/vendor/*
+/public/downloads
