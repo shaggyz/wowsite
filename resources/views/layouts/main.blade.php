@@ -19,9 +19,19 @@
 				</div>
 				<div class="col-sm-9 text-right server-resume">
 					<h1>{{ $wowServerName }} Wowserver</h1>
-					<h2 class="muted">Classic Vanilla {{ $wowServerVersion }} World of warcraft server</h2>
-					<p><strong>Untouched</strong> database, Blizzard rates, No item store, normal drops, etc.</p>
+					<h2 class="muted">{{ _('Classic Vanilla') }} {{ $wowServerVersion }} {{ _('World of warcraft server') }}</h2>
+					<p><strong>{{ _('Untouched') }}</strong> {{ _('database, Blizzard rates, No item store, normal drops, etc.') }}</p>
 				</div>
+			</div>
+
+			{{-- language selector --}}
+			<div class="col-md-2">
+				{!!
+					LaravelGettext::getSelector([
+				        'en_US' => _('English'),
+				        'es_ES' => _('Spanish')
+				    ])->render() 
+				!!}
 			</div>
 		</div>
 	</header>
@@ -34,7 +44,7 @@
 
 	<footer>
 		<div class="container">
-			<p>{{ $wowServerName }} wow server - {{ date('Y') }}</p>
+			<p>{{ $wowServerName }} {{ _('wow server') }} - {{ date('Y') }}</p>
 			<script type="text/javascript" src="/vendor/jquery/dist/jquery.min.js"></script>
 			<script type="text/javascript" src="/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 			<script type="text/javascript" src="/js/bundle.js"></script>

@@ -8,8 +8,10 @@ use WowSite\Http\Requests;
 use WowSite\Services\Realmd\AccountService;
 use WowSite\Services\Realmd\CharacterService;
 
-use Krumo;
+//use Krumo;
 use View;
+use URL;
+use LaravelGettext;
 
 /**
  * Site front controller
@@ -56,9 +58,9 @@ class HomeController extends WowSiteController
     public function index()
     {
         return View::make('home.index')
-                        ->withCharacters($this->characters->total())
-                        ->withOnline($this->characters->online())
-                        ->withAccounts($this->accounts->all());
+            ->withCharacters($this->characters->total())
+            ->withOnline($this->characters->online())
+            ->withAccounts($this->accounts->all());
     }
 
     /**
@@ -84,7 +86,17 @@ class HomeController extends WowSiteController
         );
 
         return redirect()
-                ->route('home.index')
-                ->withMessage('Account created. Enjoy!');
+            ->route('home.index')
+            ->withMessage('Account created. Enjoy!');
+    }
+
+    /**
+     * Changes the current language and returns to previous page
+     * @return Redirect
+     */
+    public function changeLang($locale=null)
+    {
+        LaravelGettext::setLocale($locale);
+        return redirect()->to(URL::previous());
     }
 }
